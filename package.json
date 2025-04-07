@@ -1,0 +1,35 @@
+{
+  "name": "attendence-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "amqplib": "^0.10.7",
+    "axios": "^1.8.4",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "husky": "^9.1.7",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "lint-staged": "^15.5.0",
+    "moment": "^2.30.1",
+    "mongoose": "^8.13.2",
+    "prettier": "^3.5.3",
+    "qrcode": "^1.5.4",
+    "rimraf": "^6.0.1",
+    "winston": "^3.17.0"
+  }
+}
