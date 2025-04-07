@@ -59,7 +59,7 @@ attendance-system/
 │   │   └── utils/
 │   │       ├── service-registry.js  # Service discovery
 │   │       ├── http-client.js       # HTTP client for proxying
-|   |       ├── logger.js 
+|   |       └── logger.js 
 │   ├── .env.example                 # Example environment variables
 │   ├── .env                         # Environment variables (gitignored)
 │   ├── Dockerfile                   # Docker build file
@@ -81,7 +81,10 @@ attendance-system/
 │   │   │   └── role.routes.js       # Role management endpoints
 │   │   ├── middleware/
 │   │   │   ├── validators.js        # Request validation
-│   │   │   └── role-check.js        # Role-based access control
+│   │   │   ├── role-check.js        # Role-based access control
+│   │   │   ├── auth.js
+│   │   │   └── error-handler.js
+│   │   │   
 │   │   ├── services/
 │   │   │   ├── auth.service.js      # Authentication business logic
 │   │   │   └── token.service.js     # JWT token management
@@ -89,7 +92,8 @@ attendance-system/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
 │   │       ├── password.util.js     # Password hashing
-│   │       └── token.util.js        # Token generation/validation
+│   │       ├── token.util.js        # Token generation/validation
+|   |       └── logger.js 
 │   ├── .env.example
 │   ├── .env
 │   ├── Dockerfile
@@ -113,6 +117,8 @@ attendance-system/
 │   │   │   ├── student.routes.js    # Student-specific endpoints
 │   │   │   └── teacher.routes.js    # Teacher-specific endpoints
 │   │   ├── middleware/
+│   │   │   ├── auth.js
+│   │   │   ├── error-handler.js
 │   │   │   └── validators.js        # Request validation
 │   │   ├── services/
 │   │   │   ├── user.service.js      # User management logic
@@ -121,6 +127,7 @@ attendance-system/
 │   │   ├── config/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
+│   │       ├── logger.js
 │   │       └── user.util.js         # User utilities
 │   ├── .env.example
 │   ├── .env
