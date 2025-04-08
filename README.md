@@ -155,6 +155,8 @@ attendance-system/
 │   │   │   ├── course.routes.js     # Course endpoints
 │   │   │   └── class.routes.js      # Class endpoints
 │   │   ├── middleware/
+│   │   │   ├── auth.js
+│   │   │   ├── error-handler.js
 │   │   │   └── validators.js        # Request validation
 │   │   ├── services/
 │   │   │   ├── college.service.js   # College business logic
@@ -164,6 +166,7 @@ attendance-system/
 │   │   ├── config/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
+│   │       ├── logger.js
 │   │       └── college.util.js      # College utilities
 │   ├── .env.example
 │   ├── .env
@@ -188,6 +191,8 @@ attendance-system/
 │   │   │   ├── session.routes.js    # Session endpoints
 │   │   │   └── record.routes.js     # Record retrieval endpoints
 │   │   ├── middleware/
+│   │   │   ├── auth.js
+│   │   │   ├── error-handler.js
 │   │   │   └── validators.js        # Request validation
 │   │   ├── services/
 │   │   │   ├── attendance.service.js # Attendance business logic
@@ -196,6 +201,7 @@ attendance-system/
 │   │   ├── config/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
+│   │       ├── logger.js
 │   │       └── attendance.util.js   # Attendance utilities
 │   ├── .env.example
 │   ├── .env
@@ -216,6 +222,8 @@ attendance-system/
 │   │   │   ├── qr.routes.js         # QR generation endpoints
 │   │   │   └── validation.routes.js # QR validation endpoints
 │   │   ├── middleware/
+│   │   │   ├── auth.js
+│   │   │   ├── error-handler.js
 │   │   │   └── validators.js        # Request validation
 │   │   ├── services/
 │   │   │   ├── qr.service.js        # QR generation logic
@@ -223,6 +231,7 @@ attendance-system/
 │   │   ├── config/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
+│   │       ├── logger.js
 │   │       ├── qr-generator.js      # QR generation utilities
 │   │       └── encryption.js        # QR code encryption
 │   ├── .env.example
@@ -244,6 +253,8 @@ attendance-system/
 │   │   │   ├── fingerprint.routes.js # Fingerprint endpoints
 │   │   │   └── verification.routes.js # Verification endpoints
 │   │   ├── middleware/
+│   │   │   ├── auth.js
+│   │   │   ├── error-handler.js
 │   │   │   └── validators.js        # Request validation
 │   │   ├── services/
 │   │   │   ├── fingerprint.service.js # Fingerprint logic
@@ -251,6 +262,7 @@ attendance-system/
 │   │   ├── config/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
+│   │       ├── logger.js
 │   │       └── biometric.util.js    # Biometric utilities
 │   ├── .env.example
 │   ├── .env
@@ -274,6 +286,8 @@ attendance-system/
 │   │   │   ├── email.routes.js      # Email endpoints
 │   │   │   └── push.routes.js       # Push notification endpoints
 │   │   ├── middleware/
+│   │   │   ├── auth.js
+│   │   │   ├── error-handler.js
 │   │   │   └── validators.js        # Request validation
 │   │   ├── services/
 │   │   │   ├── notification.service.js # Notification logic
@@ -282,6 +296,7 @@ attendance-system/
 │   │   ├── config/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
+│   │       ├── logger.js
 │   │       └── notification.util.js # Notification utilities
 │   ├── .env.example
 │   ├── .env
@@ -305,6 +320,8 @@ attendance-system/
 │   │   │   ├── report.routes.js     # Report endpoints
 │   │   │   └── dashboard.routes.js  # Dashboard endpoints
 │   │   ├── middleware/
+│   │   │   ├── auth.js
+│   │   │   ├── error-handler.js
 │   │   │   └── validators.js        # Request validation
 │   │   ├── services/
 │   │   │   ├── analytics.service.js # Analytics processing
@@ -313,6 +330,7 @@ attendance-system/
 │   │   ├── config/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
+│   │       ├── logger.js
 │   │       └── analytics.util.js    # Analytics utilities
 │   ├── .env.example
 │   ├── .env
@@ -336,6 +354,8 @@ attendance-system/
 │   │   │   ├── company.routes.js    # Company endpoints
 │   │   │   └── settings.routes.js   # Settings endpoints
 │   │   ├── middleware/
+│   │   │   ├── auth.js
+│   │   │   ├── error-handler.js
 │   │   │   └── validators.js        # Request validation
 │   │   ├── services/
 │   │   │   ├── admin.service.js     # Admin operations logic
@@ -344,6 +364,7 @@ attendance-system/
 │   │   ├── config/
 │   │   │   └── index.js             # Service configuration
 │   │   └── utils/
+│   │       ├── logger.js
 │   │       └── admin.util.js        # Admin utilities
 │   ├── .env.example
 │   ├── .env
